@@ -9,7 +9,7 @@ namespace Events
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Helllllo!");
+            Console.WriteLine("Helllllo! What up~?!");
         }
     }
 }
