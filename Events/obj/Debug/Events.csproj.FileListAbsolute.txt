@@ -4,3 +4,4 @@ C:\Users\shkco\source\repos\Events\Events\obj\Debug\Events.csprojResolveAssembly
 C:\Users\shkco\source\repos\Events\Events\obj\Debug\Events.csproj.CoreCompileInputs.cache
 C:\Users\shkco\source\repos\Events\Events\obj\Debug\Events.exe
 C:\Users\shkco\source\repos\Events\Events\obj\Debug\Events.pdb
+C:\Users\shkco\source\repos\Events\Events\bin\Debug\Events.exe.config
