@@ -34,9 +34,8 @@ namespace Excercise_1
             return this;
         }
 
-        public double Calculate(double value)
+        public double Calculate(double appliedValue)
         {
-            double appliedValue = value;
             //loops on list and applies all functions - from start to end
             foreach (var func in funcsList)
             {

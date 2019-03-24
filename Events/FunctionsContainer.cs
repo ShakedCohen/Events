@@ -11,31 +11,37 @@ namespace Excercise_1
         //dictionary betweens keys and functions
         Dictionary<string, Func<double, double>> missions = new Dictionary<string, Func<double, double>>();
 
-        public Func<double, double> this[string key]
+        public Func<double, double> this[string funcName]
         {
             get
             {
                 //if the function exist in the missions list, return it
-                if (missions.Keys.Any(keyName => keyName == key))
+                if (missions.Keys.Any(keyName => keyName == funcName))
                 {
-                    return missions[key];
+                    return missions[funcName];
                 }
                 //else return function that returns the value without any change (id function)
                 else
                 {
-                    missions.Add(key, val => val);
-                    return missions[key];
+                    missions.Add(funcName, val => val);
+                    return missions[funcName];
                 }
             }
             set
             {
-                missions[key] = value;
+                missions[funcName] = value;
             }
         }
         //returns all keys from func container
         public List<string> getAllMissions()
         {
-            return missions.Keys.ToList();
+            var allKeys = missions.Keys;
+            List<string> list = new List<string>();
+            foreach (var key in allKeys)
+            {
+                list.Add(key);
+            }
+            return list;
         }
 
     }
